@@ -1,0 +1,31 @@
+[package]
+name = "lolcat"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+autoexamples = false
+license = "BSD-3-Clause"
+description = "Rainbow cat: a byte-compatible Rust rewrite of the Ruby lolcat"
+repository = "https://github.com/bitplane/lolcat"
+keywords = ["lolcat", "rainbow", "ansi", "terminal", "cat"]
+categories = ["command-line-utilities"]
+include = [
+    "/src/**",
+    "/examples/specimen.rs",
+    "/tests/*.rs",
+    "/tests/golden/**",
+    "/Cargo.toml",
+    "/Cargo.lock",
+    "/README.md",
+    "/LICENSE",
+    "/THIRD_PARTY_LICENSES.md",
+]
+
+[lints.rust]
+warnings = "deny"
+
+[dependencies]
+
+[[example]]
+name = "specimen"
+path = "examples/specimen.rs"
